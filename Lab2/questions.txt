@@ -1,0 +1,10 @@
+the reason for using SO_REUSEADDR is for multicasting
+and generally so multiple sockets can connect to the same ip and port
+something about 0.0.0.0:80 acting as a wildcard
+which allows any ip and port socket to connect
+1. In the socket constructor use socket.SOCK_STREAM, socket.AF_INET specifies ipv4
+2. Server sockets bind to a port and ip and listens for incoming connections, while the client socket sends data to a server
+3. Using the .setsockopt and setting the level to socket being socket.SOL_SOCKET and option being socket.SO_REUSEADDR to true
+4. On servers we get the ip and port of connecting clients.
+5. recv() returns an empty byte str which we use to break out of connection.
+6. https://github.com/TeaCookie/404labs/tree/13ea8f59da5edd74e6c5c77bc1df1ca7f05bbfe5/Lab2
