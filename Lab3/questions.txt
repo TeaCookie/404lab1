@@ -1,0 +1,7 @@
+1. https://github.com/TeaCookie/404labs/tree/395973f85bd175b05fed409277ec6ba00ffe7848/Lab3
+2. Congratulations Rocket screen
+3. the root shows the 404 debug screen because we didn't handle that case, 
+and /polls displays serves the index.html: Hello, world. You're at the polls index
+4. Django's migrations is how we update the schema in the database, 
+since we just added new models and their values, we need to call migrations to let them be created in the database.
+5. 
