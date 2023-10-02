@@ -18,4 +18,5 @@ def get(host, port):
     s.close()
     return result
 
-print(get("127.0.0.1", 8080))
+# print(get("127.0.0.1", 8080))
+print(get("www.google.com", 80))

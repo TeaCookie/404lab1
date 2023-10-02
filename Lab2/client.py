@@ -16,5 +16,5 @@ def get(host, port):
     s.close() # this .close can be done automatically with the with syntax on python which auto closes when the connection is done.
 
 
-# get("www.google.com", 80)
-get("localhost", 8080)
+get("www.google.com", 80)
+# get("localhost", 8080)
