@@ -4,4 +4,11 @@
 and /polls displays serves the index.html: Hello, world. You're at the polls index
 4. Django's migrations is how we update the schema in the database, 
 since we just added new models and their values, we need to call migrations to let them be created in the database.
-5. 
+5. You see models we just added along with the admin group models, which i think is default?
+To get custom models, you can add another model to the same app under polls, or you can create another app with its own models as well
+6. polls/1/ is redirected into polls/1/results/,
+polls/1/results/ brings you to the page where you can vote
+polls/1/vote is the page you go to after you send in the vote in the previous page, going here manually will show "You didn't select a choice."
+You would have to add a URL pattern something like <str:...> to be able to use strings, and of course you need to have polls with strings as the name, also this has to be reflected in the database
+7. It makes it harder to change URLs in the future.
+8. You can display lists for any object versus having to specify a view for each object when using generic views. 
