@@ -1,1 +1,15 @@
-1.
+1. https://github.com/TeaCookie/404labs/tree/b95005bd71abdf99d4f53185fcc74fac72f0d3a2/Lab7
+2. Django comes with a larger framework with more features built in already, including a built in database, and also users.
+While Flask is supposed to be lightweight and deployable anywhere.
+3. Representational State Transfer - its like a standard that allows clients and servers to be stateless, it also seperates the tasks of client and server.
+Restful means something is following the standard
+4. Create Read Update Delete - these are the main methods which all databases use to keep and manage data.
+5. HTTP 1XX (Information) 
+HTTP 2xx (Success)
+HTTP 3xx (Redirect)
+HTTP 4xx (Client Error)
+HTTP 5xx (Server Error)
+6. XXS attack is when a hacker uses the client input to inject malicious scripts to gain access to sensitive informtion when victims load those contents into their own clients.
+One way to prevent this is to sanitize your inputs, make sure they are the correct type (strings)
+7. Cross-Origin Resource Sharing - CORS is a policy that you implement to allow a website to make cross origin requests to external URLs
+While same-origin requests are always allowed, cross-origin requests must match the same origin header in order for the request to be allowed.
